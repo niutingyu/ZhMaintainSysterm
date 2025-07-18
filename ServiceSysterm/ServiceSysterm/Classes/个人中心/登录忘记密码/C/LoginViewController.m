@@ -47,7 +47,7 @@
     //ipad设备隐藏选择网址按钮 默认内网
   /*  NSString *deviceType = [UIDevice currentDevice].model;
     if ([deviceType isEqualToString:@"iPad"]) {
-        self.selecteNet.hidden = YES; 123
+        self.selecteNet.hidden = YES; 123 456
     }*/
     self.selecteNet.hidden  =YES;
     self.codeTextField.delegate  =self;
