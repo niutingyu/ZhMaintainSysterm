@@ -4693,18 +4693,18 @@
 				CODE_SIGN_ENTITLEMENTS = ServiceSysterm/ServiceSysterm.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7.1.5;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = AR6JJT98A5;
 				GCC_PREFIX_HEADER = ServiceSysterm/Configure/ServiceSystem.pch;
 				INFOPLIST_FILE = ServiceSysterm/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "赣州维修";
+				INFOPLIST_KEY_CFBundleDisplayName = "珠海维修";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.3.8;
-				PRODUCT_BUNDLE_IDENTIFIER = SL.RepairSystem;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.slpcb.zhmaintain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ServiceSysterm/Classes/IQC/录入检验结果/M/ServiceSysterm-Bridging-Header.h";
@@ -4723,18 +4723,18 @@
 				CODE_SIGN_ENTITLEMENTS = ServiceSysterm/ServiceSysterm.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7.1.5;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = AR6JJT98A5;
 				GCC_PREFIX_HEADER = ServiceSysterm/Configure/ServiceSystem.pch;
 				INFOPLIST_FILE = ServiceSysterm/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "赣州维修";
+				INFOPLIST_KEY_CFBundleDisplayName = "珠海维修";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.3.8;
-				PRODUCT_BUNDLE_IDENTIFIER = SL.RepairSystem;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.slpcb.zhmaintain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ServiceSysterm/Classes/IQC/录入检验结果/M/ServiceSysterm-Bridging-Header.h";
