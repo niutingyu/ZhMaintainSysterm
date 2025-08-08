@@ -4695,7 +4695,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 3.0.7;
-				PRODUCT_BUNDLE_IDENTIFIER = com.slpcb.zhmaintain;
+				PRODUCT_BUNDLE_IDENTIFIER = com.slpcb.SLPersonnelSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SLPersonnelSystem/Classes/IQC/录入检验结果/M/SLPersonnelSystem-Bridging-Header.h";
@@ -4726,7 +4726,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 3.0.7;
-				PRODUCT_BUNDLE_IDENTIFIER = com.slpcb.zhmaintain;
+				PRODUCT_BUNDLE_IDENTIFIER = com.slpcb.SLPersonnelSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SLPersonnelSystem/Classes/IQC/录入检验结果/M/SLPersonnelSystem-Bridging-Header.h";
