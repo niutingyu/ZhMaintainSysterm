@@ -48,6 +48,7 @@ static NSString * const progressCellId =@"progressCellId";
     //提交
     UIBarButtonItem * rightItem = [[UIBarButtonItem alloc]initWithTitle:@"提交" style:UIBarButtonItemStylePlain target:self action:@selector(commitObjs)];
     self.navigationItem.rightBarButtonItem = rightItem;
+   
 }
 
 
@@ -70,7 +71,7 @@ static NSString * const progressCellId =@"progressCellId";
     //处理过程
     NSString * progress = [self.mutableDictionary objectForKey:@"处理过程"];
     //故障原因
-    NSString * trouble = [self.mutableDictionary objectForKey:@"故障原因"];
+    NSString * trouble = [self.idsMutableDictionary objectForKey:@"故障原因"];
     //设备配件
     NSString * deviceParts = [self.idsMutableDictionary objectForKey:@"设备配件"];
     //配件类型
@@ -134,7 +135,7 @@ static NSString * const progressCellId =@"progressCellId";
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSArray * placeholds = @[@"点击选择",@"请输入处理过程",@"请输入故障原因",@"点击选择",@"点击选择",@"点击选择",@"点击选择",@"点击选择",@"点击选择"];
     NSString * tipString = self.datasource[indexPath.row];
-    if ([tipString isEqualToString:@"处理过程"]||[tipString isEqualToString:@"故障原因"]) {
+    if ([tipString isEqualToString:@"处理过程"]) {
         ApplyAcceptanceProgressTableCell * cell = [tableView dequeueReusableCellWithIdentifier:progressCellId];
         cell.headTitle.text = [NSString stringWithFormat:@"%@:",self.datasource[indexPath.row]];
         cell.contentTextView.placeholder =placeholds[indexPath.row];
@@ -166,7 +167,10 @@ static NSString * const progressCellId =@"progressCellId";
     if ([tip isEqualToString:@"是否人为"]) {
         NSArray * titles = @[@"非人为",@"人为"];
         [self pickViewWithdatasource:titles idx:textField.tag tip:tip];
-    }else if ([tip isEqualToString:@"设备配件"]){
+    }else if ([tip isEqualToString:@"故障原因"]){
+        [self dataOfEnginesFailWithIdx:textField.tag tip:tip];
+    }
+    else if ([tip isEqualToString:@"设备配件"]){
         [self dataOfdeviceParts];
     }else if ([tip isEqualToString:@"配件类型"]){
         [self typeOfdevicepartsWithIdx:textField.tag tip:tip];
@@ -241,7 +245,7 @@ static NSString * const progressCellId =@"progressCellId";
     };
 }
 
-//废弃
+
 #pragma mark ---获取故障
 -(void)dataOfEnginesFailWithIdx:(NSInteger)idx tip:(NSString*)tip{
     NSMutableDictionary * parms = [NSMutableDictionary dictionary];
