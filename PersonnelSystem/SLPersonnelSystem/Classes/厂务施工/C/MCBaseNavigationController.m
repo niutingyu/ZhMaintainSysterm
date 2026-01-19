@@ -24,13 +24,20 @@
     //去除导航栏黑线
 //    self.navigationBar.shadowImage = [[UIImage alloc]init];
 //    [self.navigationBar setBackgroundImage:[[UIImage alloc]init] forBarMetrics:UIBarMetricsDefault];
+    UIBarButtonItem *item =[[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(backMethod)];
+    self.navigationItem.leftBarButtonItem =item;
     
     //配置导航栏颜色
     self.navigationBar.backgroundColor = self.navigationBar.barTintColor = [UIColor whiteColor];
     self.navigationBar.translucent = YES;
-    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(-200, 0) forBarMetrics:UIBarMetricsDefault];
-  
+//    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(-200, 0) forBarMetrics:UIBarMetricsDefault];
+//
     [self.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:[UIColor blackColor]}];
+   
+}
+
+-(void)backMethod{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     if (self.viewControllers.count>0) {

@@ -14,7 +14,7 @@
 // http://192.168.1.58:8001/
 //#define ServerAddress @"http://192.168.1.21:8001/"
 //http://218.87.254.236:8091/ http://117.41.47.13:8092/
-#define ServerAddress @"http://10.200.26.33:8001/"
+#define ServerAddress @"http://192.168.101.48:7084/"
 //#define ServerAddress @"http://192.168.101.46:80/"
 #define NetworkServerAddress @"http://218.13.221.18:8090/"
 

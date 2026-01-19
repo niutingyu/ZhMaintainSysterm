@@ -75,7 +75,7 @@
     [tableView reloadData];
 }
 -(void)setupData{
-    NSArray * arr = @[NetworkServerAddress,ServerAddress];
+    NSArray * arr = @[NetworkServerAddress,@"http://192.168.15.37:8001/"];
     [self.datasource addObjectsFromArray:arr];
     
 }

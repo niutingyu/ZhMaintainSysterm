@@ -82,5 +82,25 @@
 		<key>icon</key>
 		<string></string>
 	</dict>
+	<dict>
+		<key>moduleId</key>
+		<string>001f54c13a564920a96db1c2da5477fb</string>
+		<key>moduleName</key>
+		<string>设备安全点检</string>
+		<key>privilegeId</key>
+		<string>119</string>
+		<key>icon</key>
+		<string>spotlight_ding</string>
+	</dict>
+	<dict>
+		<key>moduleId</key>
+		<string>00000000000000000000000000000001</string>
+		<key>moduleName</key>
+		<string>维修工具管理</string>
+		<key>privilegeId</key>
+		<string>103</string>
+		<key>icon</key>
+		<string>chat_btn_action_location</string>
+	</dict>
 </array>
 </plist>

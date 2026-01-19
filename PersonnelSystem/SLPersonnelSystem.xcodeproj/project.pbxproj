@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A05749D2F1A369F002B26CE /* SafeCheckMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A05749C2F1A369F002B26CE /* SafeCheckMenuController.m */; };
+		1A0574A02F1A4ABA002B26CE /* MTMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A05749F2F1A4ABA002B26CE /* MTMenuController.m */; };
+		1A0574A42F1A4E25002B26CE /* MTToolCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0574A22F1A4E25002B26CE /* MTToolCell.m */; };
+		1A0574A52F1A4E25002B26CE /* MTToolCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0574A32F1A4E25002B26CE /* MTToolCell.xib */; };
+		1A0574A82F1A504E002B26CE /* MTToolModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0574A72F1A504E002B26CE /* MTToolModel.m */; };
+		1A0574AB2F1A5380002B26CE /* MultipleChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0574AA2F1A5380002B26CE /* MultipleChooseView.m */; };
+		1A0574AE2F1B28BA002B26CE /* ChoseToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0574AD2F1B28BA002B26CE /* ChoseToolViewController.m */; };
+		1A0574B12F1B2C84002B26CE /* ToolMaterialModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0574B02F1B2C84002B26CE /* ToolMaterialModel.m */; };
 		1A05919126CB4C1800311792 /* MenuView.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A05919026CB4C1800311792 /* MenuView.json */; };
 		1A0591BF26CCE48900311792 /* QCDateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0591BE26CCE48900311792 /* QCDateController.m */; };
 		1A0591D826CCE4EA00311792 /* LXCalendarWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0591C726CCE4EA00311792 /* LXCalendarWeekView.m */; };
@@ -157,6 +165,9 @@
 		1A6349AC2544226B00B150F7 /* MCUnfinishChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6349AB2544226B00B150F7 /* MCUnfinishChildController.m */; };
 		1A6349AF2544255100B150F7 /* MCListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6349AE2544255100B150F7 /* MCListModel.m */; };
 		1A669CF6254D032600652B25 /* MCDetailWorkLogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A669CF5254D032600652B25 /* MCDetailWorkLogController.m */; };
+		1A68F6772F123C0400C0F234 /* MTToolHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A68F6762F123C0400C0F234 /* MTToolHistoryController.m */; };
+		1A68F67A2F123C1E00C0F234 /* MTToolTaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A68F6792F123C1E00C0F234 /* MTToolTaskController.m */; };
+		1A68F6812F123C9800C0F234 /* MTToolUnFinishController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A68F6802F123C9800C0F234 /* MTToolUnFinishController.m */; };
 		1A6A37C7256212390088472F /* NetMoudleListArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A37C6256212390088472F /* NetMoudleListArray.m */; };
 		1A6CE60929D5283600E544D9 /* ManagerDeviceTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6CE60829D5283600E544D9 /* ManagerDeviceTabBarController.m */; };
 		1A6CE61429D529B100E544D9 /* DMTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6CE61329D529B100E544D9 /* DMTaskViewController.m */; };
@@ -304,8 +315,6 @@
 		1A9F40EF22FE96A700E89F5A /* PauseContentTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9F40ED22FE96A700E89F5A /* PauseContentTableCell.xib */; };
 		1A9F40F322FEB48E00E89F5A /* ApplyFinishAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9F40F222FEB48E00E89F5A /* ApplyFinishAlertView.m */; };
 		1A9FBF45229E0F60001AF81E /* MTMaintainNewOrderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9FBF44229E0F60001AF81E /* MTMaintainNewOrderController.m */; };
-		1A9FBF49229E1138001AF81E /* MTNewOrderTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9FBF47229E1138001AF81E /* MTNewOrderTableCell.m */; };
-		1A9FBF4A229E1138001AF81E /* MTNewOrderTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9FBF48229E1138001AF81E /* MTNewOrderTableCell.xib */; };
 		1A9FBF4E229E1363001AF81E /* MTToolTypeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9FBF4C229E1363001AF81E /* MTToolTypeTableCell.m */; };
 		1A9FBF4F229E1363001AF81E /* MTToolTypeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9FBF4D229E1363001AF81E /* MTToolTypeTableCell.xib */; };
 		1A9FBF52229E185A001AF81E /* MTFootAddView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9FBF51229E185A001AF81E /* MTFootAddView.m */; };
@@ -402,6 +411,7 @@
 		1AB0A9F2229FB8A100632485 /* SelectedMemberTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB0A9F0229FB8A100632485 /* SelectedMemberTableCell.m */; };
 		1AB0A9F3229FB8A100632485 /* SelectedMemberTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AB0A9F1229FB8A100632485 /* SelectedMemberTableCell.xib */; };
 		1AB290B1229BB76000F033EB /* CEMenuChosView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB290B0229BB76000F033EB /* CEMenuChosView.m */; };
+		1AB62D012F10AF2000A5B534 /* SafeTableHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB62D002F10AF1F00A5B534 /* SafeTableHeadView.m */; };
 		1ABB553A22939ED800C2AA3D /* DEMessageTelTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABB553822939ED800C2AA3D /* DEMessageTelTableCell.m */; };
 		1ABB553B22939ED800C2AA3D /* DEMessageTelTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ABB553922939ED800C2AA3D /* DEMessageTelTableCell.xib */; };
 		1AC4C79122BE1CED00F3BC3D /* PasswordSetTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4C78F22BE1CED00F3BC3D /* PasswordSetTableCell.m */; };
@@ -421,12 +431,18 @@
 		1ACE0C482429B715000BC59A /* SLResumeBasicMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE0C442429B714000BC59A /* SLResumeBasicMessageCell.m */; };
 		1ACE0C492429B715000BC59A /* SLResumeBasicMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACE0C452429B714000BC59A /* SLResumeBasicMessageCell.xib */; };
 		1ACE0C4A2429B715000BC59A /* SLMaintainResumeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE0C462429B714000BC59A /* SLMaintainResumeHeadView.m */; };
+		1AD3E7832F0CB6E800489444 /* SafeCheckTaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD3E7822F0CB6E800489444 /* SafeCheckTaskController.m */; };
+		1AD3E7862F0CB71E00489444 /* SafeCheckUnFinishController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD3E7852F0CB71E00489444 /* SafeCheckUnFinishController.m */; };
+		1AD3E7892F0CB76B00489444 /* SafeCheckHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD3E7882F0CB76B00489444 /* SafeCheckHistoryController.m */; };
 		1AD789DB2285502500D22AA7 /* DENavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD789DA2285502500D22AA7 /* DENavigationView.m */; };
 		1AD789DE228561DE00D22AA7 /* DEAlertFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD789DD228561DE00D22AA7 /* DEAlertFilterView.m */; };
 		1AD789E622856C9B00D22AA7 /* EDDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD789E522856C9B00D22AA7 /* EDDatePickerView.m */; };
 		1AD789E822856CA000D22AA7 /* EDDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AD789E722856CA000D22AA7 /* EDDatePickerView.xib */; };
 		1AD789EC228577BD00D22AA7 /* DEResotreListTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD789EA228577BD00D22AA7 /* DEResotreListTableCell.m */; };
 		1AD789ED228577BD00D22AA7 /* DEResotreListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AD789EB228577BD00D22AA7 /* DEResotreListTableCell.xib */; };
+		1ADB6B1D2F1DE0D3003A77C9 /* MTTaskTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADB6B1B2F1DE0D3003A77C9 /* MTTaskTableCell.m */; };
+		1ADB6B1E2F1DE0D3003A77C9 /* MTTaskTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ADB6B1C2F1DE0D3003A77C9 /* MTTaskTableCell.xib */; };
+		1ADB6B212F1DFE88003A77C9 /* MTTaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADB6B202F1DFE88003A77C9 /* MTTaskModel.m */; };
 		1AE184E62317B1FE00B77789 /* RegisterOutStockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE184E52317B1FE00B77789 /* RegisterOutStockController.m */; };
 		1AE184EA2317B27E00B77789 /* OutStockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE184E82317B27E00B77789 /* OutStockTableViewCell.m */; };
 		1AE184EB2317B27E00B77789 /* OutStockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AE184E92317B27E00B77789 /* OutStockTableViewCell.xib */; };
@@ -481,6 +497,11 @@
 		1AF74A8122A222F8000458D7 /* DEPauseRepairController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF74A8022A222F8000458D7 /* DEPauseRepairController.m */; };
 		1AF74A8522A22793000458D7 /* DEPauseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF74A8322A22793000458D7 /* DEPauseTableCell.m */; };
 		1AF74A8622A22793000458D7 /* DEPauseTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF74A8422A22793000458D7 /* DEPauseTableCell.xib */; };
+		1AF7D1102F0E031D00A75AB4 /* SafeCheckTaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7D10E2F0E031D00A75AB4 /* SafeCheckTaskCell.m */; };
+		1AF7D1112F0E031D00A75AB4 /* SafeCheckTaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF7D10F2F0E031D00A75AB4 /* SafeCheckTaskCell.xib */; };
+		1AF7D1142F0E0EA700A75AB4 /* SafeCheckModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7D1132F0E0EA700A75AB4 /* SafeCheckModel.m */; };
+		1AF7D1172F0E0F0100A75AB4 /* SafeCheckListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7D1162F0E0F0100A75AB4 /* SafeCheckListModel.m */; };
+		1AF7D11C2F0E126900A75AB4 /* SafeCheckDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7D11B2F0E126900A75AB4 /* SafeCheckDetailController.m */; };
 		1AFB385723025B9600884559 /* TopAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB385623025B9600884559 /* TopAlertView.m */; };
 		1AFB385A23025D4900884559 /* RGBA.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB385923025D4900884559 /* RGBA.m */; };
 /* End PBXBuildFile section */
@@ -503,6 +524,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A05749B2F1A369F002B26CE /* SafeCheckMenuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeCheckMenuController.h; sourceTree = "<group>"; };
+		1A05749C2F1A369F002B26CE /* SafeCheckMenuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeCheckMenuController.m; sourceTree = "<group>"; };
+		1A05749E2F1A4ABA002B26CE /* MTMenuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTMenuController.h; sourceTree = "<group>"; };
+		1A05749F2F1A4ABA002B26CE /* MTMenuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTMenuController.m; sourceTree = "<group>"; };
+		1A0574A12F1A4E25002B26CE /* MTToolCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTToolCell.h; sourceTree = "<group>"; };
+		1A0574A22F1A4E25002B26CE /* MTToolCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTToolCell.m; sourceTree = "<group>"; };
+		1A0574A32F1A4E25002B26CE /* MTToolCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTToolCell.xib; sourceTree = "<group>"; };
+		1A0574A62F1A504E002B26CE /* MTToolModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTToolModel.h; sourceTree = "<group>"; };
+		1A0574A72F1A504E002B26CE /* MTToolModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTToolModel.m; sourceTree = "<group>"; };
+		1A0574A92F1A5380002B26CE /* MultipleChooseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultipleChooseView.h; sourceTree = "<group>"; };
+		1A0574AA2F1A5380002B26CE /* MultipleChooseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultipleChooseView.m; sourceTree = "<group>"; };
+		1A0574AC2F1B28BA002B26CE /* ChoseToolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChoseToolViewController.h; sourceTree = "<group>"; };
+		1A0574AD2F1B28BA002B26CE /* ChoseToolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChoseToolViewController.m; sourceTree = "<group>"; };
+		1A0574AF2F1B2C84002B26CE /* ToolMaterialModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolMaterialModel.h; sourceTree = "<group>"; };
+		1A0574B02F1B2C84002B26CE /* ToolMaterialModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolMaterialModel.m; sourceTree = "<group>"; };
 		1A05919026CB4C1800311792 /* MenuView.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MenuView.json; sourceTree = "<group>"; };
 		1A0591BD26CCE48900311792 /* QCDateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCDateController.h; sourceTree = "<group>"; };
 		1A0591BE26CCE48900311792 /* QCDateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCDateController.m; sourceTree = "<group>"; };
@@ -774,6 +810,12 @@
 		1A6349AE2544255100B150F7 /* MCListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCListModel.m; sourceTree = "<group>"; };
 		1A669CF4254D032600652B25 /* MCDetailWorkLogController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCDetailWorkLogController.h; sourceTree = "<group>"; };
 		1A669CF5254D032600652B25 /* MCDetailWorkLogController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCDetailWorkLogController.m; sourceTree = "<group>"; };
+		1A68F6752F123C0400C0F234 /* MTToolHistoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTToolHistoryController.h; sourceTree = "<group>"; };
+		1A68F6762F123C0400C0F234 /* MTToolHistoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTToolHistoryController.m; sourceTree = "<group>"; };
+		1A68F6782F123C1E00C0F234 /* MTToolTaskController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTToolTaskController.h; sourceTree = "<group>"; };
+		1A68F6792F123C1E00C0F234 /* MTToolTaskController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTToolTaskController.m; sourceTree = "<group>"; };
+		1A68F67F2F123C9800C0F234 /* MTToolUnFinishController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTToolUnFinishController.h; sourceTree = "<group>"; };
+		1A68F6802F123C9800C0F234 /* MTToolUnFinishController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTToolUnFinishController.m; sourceTree = "<group>"; };
 		1A6A37C5256212390088472F /* NetMoudleListArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetMoudleListArray.h; sourceTree = "<group>"; };
 		1A6A37C6256212390088472F /* NetMoudleListArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetMoudleListArray.m; sourceTree = "<group>"; };
 		1A6CE60729D5283600E544D9 /* ManagerDeviceTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagerDeviceTabBarController.h; sourceTree = "<group>"; };
@@ -1049,9 +1091,6 @@
 		1A9F40F222FEB48E00E89F5A /* ApplyFinishAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplyFinishAlertView.m; sourceTree = "<group>"; };
 		1A9FBF43229E0F60001AF81E /* MTMaintainNewOrderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTMaintainNewOrderController.h; sourceTree = "<group>"; };
 		1A9FBF44229E0F60001AF81E /* MTMaintainNewOrderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTMaintainNewOrderController.m; sourceTree = "<group>"; };
-		1A9FBF46229E1138001AF81E /* MTNewOrderTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTNewOrderTableCell.h; sourceTree = "<group>"; };
-		1A9FBF47229E1138001AF81E /* MTNewOrderTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTNewOrderTableCell.m; sourceTree = "<group>"; };
-		1A9FBF48229E1138001AF81E /* MTNewOrderTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTNewOrderTableCell.xib; sourceTree = "<group>"; };
 		1A9FBF4B229E1363001AF81E /* MTToolTypeTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTToolTypeTableCell.h; sourceTree = "<group>"; };
 		1A9FBF4C229E1363001AF81E /* MTToolTypeTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTToolTypeTableCell.m; sourceTree = "<group>"; };
 		1A9FBF4D229E1363001AF81E /* MTToolTypeTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTToolTypeTableCell.xib; sourceTree = "<group>"; };
@@ -1224,6 +1263,8 @@
 		1AB0A9F1229FB8A100632485 /* SelectedMemberTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedMemberTableCell.xib; sourceTree = "<group>"; };
 		1AB290AF229BB76000F033EB /* CEMenuChosView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEMenuChosView.h; sourceTree = "<group>"; };
 		1AB290B0229BB76000F033EB /* CEMenuChosView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CEMenuChosView.m; sourceTree = "<group>"; };
+		1AB62CFF2F10AF1F00A5B534 /* SafeTableHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeTableHeadView.h; sourceTree = "<group>"; };
+		1AB62D002F10AF1F00A5B534 /* SafeTableHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeTableHeadView.m; sourceTree = "<group>"; };
 		1ABB553722939ED800C2AA3D /* DEMessageTelTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEMessageTelTableCell.h; sourceTree = "<group>"; };
 		1ABB553822939ED800C2AA3D /* DEMessageTelTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DEMessageTelTableCell.m; sourceTree = "<group>"; };
 		1ABB553922939ED800C2AA3D /* DEMessageTelTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DEMessageTelTableCell.xib; sourceTree = "<group>"; };
@@ -1255,6 +1296,12 @@
 		1ACE0C442429B714000BC59A /* SLResumeBasicMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLResumeBasicMessageCell.m; sourceTree = "<group>"; };
 		1ACE0C452429B714000BC59A /* SLResumeBasicMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SLResumeBasicMessageCell.xib; sourceTree = "<group>"; };
 		1ACE0C462429B714000BC59A /* SLMaintainResumeHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLMaintainResumeHeadView.m; sourceTree = "<group>"; };
+		1AD3E7812F0CB6E800489444 /* SafeCheckTaskController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeCheckTaskController.h; sourceTree = "<group>"; };
+		1AD3E7822F0CB6E800489444 /* SafeCheckTaskController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeCheckTaskController.m; sourceTree = "<group>"; };
+		1AD3E7842F0CB71E00489444 /* SafeCheckUnFinishController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeCheckUnFinishController.h; sourceTree = "<group>"; };
+		1AD3E7852F0CB71E00489444 /* SafeCheckUnFinishController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeCheckUnFinishController.m; sourceTree = "<group>"; };
+		1AD3E7872F0CB76B00489444 /* SafeCheckHistoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeCheckHistoryController.h; sourceTree = "<group>"; };
+		1AD3E7882F0CB76B00489444 /* SafeCheckHistoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeCheckHistoryController.m; sourceTree = "<group>"; };
 		1AD789D92285502500D22AA7 /* DENavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DENavigationView.h; sourceTree = "<group>"; };
 		1AD789DA2285502500D22AA7 /* DENavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DENavigationView.m; sourceTree = "<group>"; };
 		1AD789DC228561DE00D22AA7 /* DEAlertFilterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEAlertFilterView.h; sourceTree = "<group>"; };
@@ -1265,6 +1312,11 @@
 		1AD789E9228577BD00D22AA7 /* DEResotreListTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEResotreListTableCell.h; sourceTree = "<group>"; };
 		1AD789EA228577BD00D22AA7 /* DEResotreListTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DEResotreListTableCell.m; sourceTree = "<group>"; };
 		1AD789EB228577BD00D22AA7 /* DEResotreListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DEResotreListTableCell.xib; sourceTree = "<group>"; };
+		1ADB6B1A2F1DE0D3003A77C9 /* MTTaskTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTaskTableCell.h; sourceTree = "<group>"; };
+		1ADB6B1B2F1DE0D3003A77C9 /* MTTaskTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTaskTableCell.m; sourceTree = "<group>"; };
+		1ADB6B1C2F1DE0D3003A77C9 /* MTTaskTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTTaskTableCell.xib; sourceTree = "<group>"; };
+		1ADB6B1F2F1DFE88003A77C9 /* MTTaskModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTaskModel.h; sourceTree = "<group>"; };
+		1ADB6B202F1DFE88003A77C9 /* MTTaskModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTaskModel.m; sourceTree = "<group>"; };
 		1AE184E42317B1FE00B77789 /* RegisterOutStockController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterOutStockController.h; sourceTree = "<group>"; };
 		1AE184E52317B1FE00B77789 /* RegisterOutStockController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterOutStockController.m; sourceTree = "<group>"; };
 		1AE184E72317B27E00B77789 /* OutStockTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OutStockTableViewCell.h; sourceTree = "<group>"; };
@@ -1366,6 +1418,15 @@
 		1AF74A8222A22793000458D7 /* DEPauseTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEPauseTableCell.h; sourceTree = "<group>"; };
 		1AF74A8322A22793000458D7 /* DEPauseTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DEPauseTableCell.m; sourceTree = "<group>"; };
 		1AF74A8422A22793000458D7 /* DEPauseTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DEPauseTableCell.xib; sourceTree = "<group>"; };
+		1AF7D10D2F0E031D00A75AB4 /* SafeCheckTaskCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeCheckTaskCell.h; sourceTree = "<group>"; };
+		1AF7D10E2F0E031D00A75AB4 /* SafeCheckTaskCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeCheckTaskCell.m; sourceTree = "<group>"; };
+		1AF7D10F2F0E031D00A75AB4 /* SafeCheckTaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SafeCheckTaskCell.xib; sourceTree = "<group>"; };
+		1AF7D1122F0E0EA700A75AB4 /* SafeCheckModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeCheckModel.h; sourceTree = "<group>"; };
+		1AF7D1132F0E0EA700A75AB4 /* SafeCheckModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeCheckModel.m; sourceTree = "<group>"; };
+		1AF7D1152F0E0F0100A75AB4 /* SafeCheckListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeCheckListModel.h; sourceTree = "<group>"; };
+		1AF7D1162F0E0F0100A75AB4 /* SafeCheckListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeCheckListModel.m; sourceTree = "<group>"; };
+		1AF7D11A2F0E126900A75AB4 /* SafeCheckDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeCheckDetailController.h; sourceTree = "<group>"; };
+		1AF7D11B2F0E126900A75AB4 /* SafeCheckDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeCheckDetailController.m; sourceTree = "<group>"; };
 		1AFB385523025B9600884559 /* TopAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopAlertView.h; sourceTree = "<group>"; };
 		1AFB385623025B9600884559 /* TopAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopAlertView.m; sourceTree = "<group>"; };
 		1AFB385823025D4900884559 /* RGBA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGBA.h; sourceTree = "<group>"; };
@@ -2036,6 +2097,90 @@
 				1A669CF5254D032600652B25 /* MCDetailWorkLogController.m */,
 			);
 			path = "详情";
+			sourceTree = "<group>";
+		};
+		1A68F66F2F123B9F00C0F234 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1ADB6B1A2F1DE0D3003A77C9 /* MTTaskTableCell.h */,
+				1ADB6B1B2F1DE0D3003A77C9 /* MTTaskTableCell.m */,
+				1ADB6B1C2F1DE0D3003A77C9 /* MTTaskTableCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A68F6702F123BA600C0F234 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1ADB6B1F2F1DFE88003A77C9 /* MTTaskModel.h */,
+				1ADB6B202F1DFE88003A77C9 /* MTTaskModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A68F6712F123BAD00C0F234 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1A68F6782F123C1E00C0F234 /* MTToolTaskController.h */,
+				1A68F6792F123C1E00C0F234 /* MTToolTaskController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1A68F6722F123BB600C0F234 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A68F6732F123BBC00C0F234 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A68F6742F123BC200C0F234 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1A68F6752F123C0400C0F234 /* MTToolHistoryController.h */,
+				1A68F6762F123C0400C0F234 /* MTToolHistoryController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1A68F67B2F123C3A00C0F234 /* 未完成 */ = {
+			isa = PBXGroup;
+			children = (
+				1A68F67E2F123C5700C0F234 /* Model */,
+				1A68F67D2F123C5000C0F234 /* View */,
+				1A68F67C2F123C4600C0F234 /* Controller */,
+			);
+			path = "未完成";
+			sourceTree = "<group>";
+		};
+		1A68F67C2F123C4600C0F234 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1A68F67F2F123C9800C0F234 /* MTToolUnFinishController.h */,
+				1A68F6802F123C9800C0F234 /* MTToolUnFinishController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1A68F67D2F123C5000C0F234 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A68F67E2F123C5700C0F234 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		1A6CE60329D527A400E544D9 /* 设备管理 */ = {
@@ -3087,9 +3232,12 @@
 		1A9FBF36229E094B001AF81E /* 设备工具管理 */ = {
 			isa = PBXGroup;
 			children = (
+				1A68F67B2F123C3A00C0F234 /* 未完成 */,
 				1A9FBF39229E0DB4001AF81E /* 历史 */,
 				1A9FBF38229E0DAE001AF81E /* 任务 */,
 				1A9FBF37229E0DA5001AF81E /* 开单 */,
+				1A05749E2F1A4ABA002B26CE /* MTMenuController.h */,
+				1A05749F2F1A4ABA002B26CE /* MTMenuController.m */,
 			);
 			path = "设备工具管理";
 			sourceTree = "<group>";
@@ -3107,6 +3255,9 @@
 		1A9FBF38229E0DAE001AF81E /* 任务 */ = {
 			isa = PBXGroup;
 			children = (
+				1A68F6712F123BAD00C0F234 /* Controller */,
+				1A68F6702F123BA600C0F234 /* Model */,
+				1A68F66F2F123B9F00C0F234 /* View */,
 			);
 			path = "任务";
 			sourceTree = "<group>";
@@ -3114,6 +3265,9 @@
 		1A9FBF39229E0DB4001AF81E /* 历史 */ = {
 			isa = PBXGroup;
 			children = (
+				1A68F6742F123BC200C0F234 /* Controller */,
+				1A68F6732F123BBC00C0F234 /* Model */,
+				1A68F6722F123BB600C0F234 /* View */,
 			);
 			path = "历史";
 			sourceTree = "<group>";
@@ -3123,6 +3277,8 @@
 			children = (
 				1A9FBF43229E0F60001AF81E /* MTMaintainNewOrderController.h */,
 				1A9FBF44229E0F60001AF81E /* MTMaintainNewOrderController.m */,
+				1A0574AC2F1B28BA002B26CE /* ChoseToolViewController.h */,
+				1A0574AD2F1B28BA002B26CE /* ChoseToolViewController.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -3130,15 +3286,17 @@
 		1A9FBF3B229E0DC0001AF81E /* V */ = {
 			isa = PBXGroup;
 			children = (
-				1A9FBF46229E1138001AF81E /* MTNewOrderTableCell.h */,
-				1A9FBF47229E1138001AF81E /* MTNewOrderTableCell.m */,
-				1A9FBF48229E1138001AF81E /* MTNewOrderTableCell.xib */,
 				1A9FBF4B229E1363001AF81E /* MTToolTypeTableCell.h */,
 				1A9FBF4C229E1363001AF81E /* MTToolTypeTableCell.m */,
 				1A9FBF4D229E1363001AF81E /* MTToolTypeTableCell.xib */,
 				1A9FBF50229E185A001AF81E /* MTFootAddView.h */,
 				1A9FBF51229E185A001AF81E /* MTFootAddView.m */,
 				1A9FBF53229E1866001AF81E /* MTFootAddView.xib */,
+				1A0574A12F1A4E25002B26CE /* MTToolCell.h */,
+				1A0574A22F1A4E25002B26CE /* MTToolCell.m */,
+				1A0574A32F1A4E25002B26CE /* MTToolCell.xib */,
+				1A0574A92F1A5380002B26CE /* MultipleChooseView.h */,
+				1A0574AA2F1A5380002B26CE /* MultipleChooseView.m */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -3146,6 +3304,10 @@
 		1A9FBF3C229E0DC3001AF81E /* M */ = {
 			isa = PBXGroup;
 			children = (
+				1A0574A62F1A504E002B26CE /* MTToolModel.h */,
+				1A0574A72F1A504E002B26CE /* MTToolModel.m */,
+				1A0574AF2F1B2C84002B26CE /* ToolMaterialModel.h */,
+				1A0574B02F1B2C84002B26CE /* ToolMaterialModel.m */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -3438,6 +3600,15 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		1AB62CFE2F10AEFF00A5B534 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1AB62CFF2F10AF1F00A5B534 /* SafeTableHeadView.h */,
+				1AB62D002F10AF1F00A5B534 /* SafeTableHeadView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1ACE0C272429A993000BC59A /* 设备履历查询 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3463,6 +3634,133 @@
 				1ACE0C3B2429B6F5000BC59A /* SLResumeListModel.m */,
 			);
 			path = "设备履历查询";
+			sourceTree = "<group>";
+		};
+		1AD3E7702F0CB4BF00489444 /* 设备安全点检 */ = {
+			isa = PBXGroup;
+			children = (
+				1AF7D1182F0E10E000A75AB4 /* 详情 */,
+				1AD3E7742F0CB58300489444 /* Controller */,
+				1AD3E7732F0CB57A00489444 /* 历史 */,
+				1AD3E7722F0CB57100489444 /* 未完成 */,
+				1AD3E7712F0CB56900489444 /* 任务 */,
+			);
+			path = "设备安全点检";
+			sourceTree = "<group>";
+		};
+		1AD3E7712F0CB56900489444 /* 任务 */ = {
+			isa = PBXGroup;
+			children = (
+				1AD3E77A2F0CB5DD00489444 /* Model */,
+				1AD3E7792F0CB5D700489444 /* View */,
+				1AD3E7782F0CB5CD00489444 /* Controller */,
+			);
+			path = "任务";
+			sourceTree = "<group>";
+		};
+		1AD3E7722F0CB57100489444 /* 未完成 */ = {
+			isa = PBXGroup;
+			children = (
+				1AD3E77D2F0CB5F300489444 /* Model */,
+				1AD3E77C2F0CB5ED00489444 /* View */,
+				1AD3E77B2F0CB5E500489444 /* Controller */,
+			);
+			path = "未完成";
+			sourceTree = "<group>";
+		};
+		1AD3E7732F0CB57A00489444 /* 历史 */ = {
+			isa = PBXGroup;
+			children = (
+				1AD3E7802F0CB60800489444 /* Model */,
+				1AD3E77F2F0CB60100489444 /* View */,
+				1AD3E77E2F0CB5F900489444 /* Controller */,
+			);
+			path = "历史";
+			sourceTree = "<group>";
+		};
+		1AD3E7742F0CB58300489444 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1A05749B2F1A369F002B26CE /* SafeCheckMenuController.h */,
+				1A05749C2F1A369F002B26CE /* SafeCheckMenuController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1AD3E7782F0CB5CD00489444 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1AD3E7812F0CB6E800489444 /* SafeCheckTaskController.h */,
+				1AD3E7822F0CB6E800489444 /* SafeCheckTaskController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1AD3E7792F0CB5D700489444 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1AF7D10D2F0E031D00A75AB4 /* SafeCheckTaskCell.h */,
+				1AF7D10E2F0E031D00A75AB4 /* SafeCheckTaskCell.m */,
+				1AF7D10F2F0E031D00A75AB4 /* SafeCheckTaskCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1AD3E77A2F0CB5DD00489444 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1AF7D1122F0E0EA700A75AB4 /* SafeCheckModel.h */,
+				1AF7D1132F0E0EA700A75AB4 /* SafeCheckModel.m */,
+				1AF7D1152F0E0F0100A75AB4 /* SafeCheckListModel.h */,
+				1AF7D1162F0E0F0100A75AB4 /* SafeCheckListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1AD3E77B2F0CB5E500489444 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1AD3E7842F0CB71E00489444 /* SafeCheckUnFinishController.h */,
+				1AD3E7852F0CB71E00489444 /* SafeCheckUnFinishController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1AD3E77C2F0CB5ED00489444 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1AD3E77D2F0CB5F300489444 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1AD3E77E2F0CB5F900489444 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1AD3E7872F0CB76B00489444 /* SafeCheckHistoryController.h */,
+				1AD3E7882F0CB76B00489444 /* SafeCheckHistoryController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1AD3E77F2F0CB60100489444 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1AD3E7802F0CB60800489444 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		1AE184E32317B1D600B77789 /* 登记出库 */ = {
@@ -3606,6 +3904,7 @@
 		1AEC0CD0226AB747000BDB81 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1AD3E7702F0CB4BF00489444 /* 设备安全点检 */,
 				1A6CE60329D527A400E544D9 /* 设备管理 */,
 				1A7A593E27DADCB80047AF9C /* 年度校正设备管理 */,
 				1A0591F826CDE25E00311792 /* 废品变卖 */,
@@ -3853,6 +4152,24 @@
 			path = "暂停维修";
 			sourceTree = "<group>";
 		};
+		1AF7D1182F0E10E000A75AB4 /* 详情 */ = {
+			isa = PBXGroup;
+			children = (
+				1AB62CFE2F10AEFF00A5B534 /* View */,
+				1AF7D1192F0E10EF00A75AB4 /* Controller */,
+			);
+			path = "详情";
+			sourceTree = "<group>";
+		};
+		1AF7D1192F0E10EF00A75AB4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1AF7D11A2F0E126900A75AB4 /* SafeCheckDetailController.h */,
+				1AF7D11B2F0E126900A75AB4 /* SafeCheckDetailController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3975,6 +4292,7 @@
 				1AE184EB2317B27E00B77789 /* OutStockTableViewCell.xib in Resources */,
 				1A8E47D226904EDE003B078D /* MaintainErrorTableCell.xib in Resources */,
 				1A5583F822FBCBA40093DE9D /* ExpectFinishTimeTableCell.xib in Resources */,
+				1AF7D1112F0E031D00A75AB4 /* SafeCheckTaskCell.xib in Resources */,
 				1AE9B03422A665BF00D57E15 /* DEBackStoreDetailCheckTableCell.xib in Resources */,
 				1A0591DB26CCE4EA00311792 /* LXCalenderCell.xib in Resources */,
 				1AAC7FBC227055CD0078CE76 /* FCItemCollectionViewCell.xib in Resources */,
@@ -4030,8 +4348,10 @@
 				1A3DF13E26F48ED4009F2EB8 /* CH_EN_icon_unsel@3x.png in Resources */,
 				1AAA593022FD0722000421E3 /* ApplyAcceptanceTypeTableCell.xib in Resources */,
 				1A558821254BB46000001489 /* MCDetailExtendSchudleTableCell.xib in Resources */,
+				1ADB6B1E2F1DE0D3003A77C9 /* MTTaskTableCell.xib in Resources */,
 				1AA63738227FD2AC005050D8 /* DECommitTableCell.xib in Resources */,
 				1AAC7FB2227043A90078CE76 /* ProfileContentTableCell.xib in Resources */,
+				1A0574A52F1A4E25002B26CE /* MTToolCell.xib in Resources */,
 				1A05924526CF8D6A00311792 /* WasterAddInformation.json in Resources */,
 				1AAA593522FD08A4000421E3 /* ApplyAcceptanceProgressTableCell.xib in Resources */,
 				1A46EAF626D322F300CDC600 /* WasterTaskListTableCell.xib in Resources */,
@@ -4046,7 +4366,6 @@
 				1A7A59BC27DC4CEB0047AF9C /* DeviceCorrectionUserLogCell.xib in Resources */,
 				1A46EB2F26D3788C00CDC600 /* WasterMessage.json in Resources */,
 				1A7A596B27DAF0450047AF9C /* DeviceCorrectionTaskListCell.xib in Resources */,
-				1A9FBF4A229E1138001AF81E /* MTNewOrderTableCell.xib in Resources */,
 				1AA9D0172282C14400BA65B8 /* DEPickChosMaterialTableCell.xib in Resources */,
 				1AEAEF1122928022005B38D8 /* DESearchDetailTableCell.xib in Resources */,
 				1AA63768228185B0005050D8 /* DEUnFinishTableCell.xib in Resources */,
@@ -4153,6 +4472,7 @@
 				1A558824254BF79500001489 /* MCDetailAppointController.m in Sources */,
 				1AA63737227FD2AC005050D8 /* DECommitTableCell.m in Sources */,
 				1ABB553A22939ED800C2AA3D /* DEMessageTelTableCell.m in Sources */,
+				1A68F67A2F123C1E00C0F234 /* MTToolTaskController.m in Sources */,
 				1A5A82C426AE65FD009BDC65 /* QCAppranceFormCollectionCell.m in Sources */,
 				1A47EB4326FACA6E00B8D307 /* UIColor+EMColor.m in Sources */,
 				1A938EB32694426D002C86CB /* IQCListModel.m in Sources */,
@@ -4161,6 +4481,7 @@
 				1AA6375C22817420005050D8 /* DETaskTableCell.m in Sources */,
 				1AAC7FA822703B010078CE76 /* ProfileTableHeadView.m in Sources */,
 				1AE184F62317C67100B77789 /* OutStockAlertView.m in Sources */,
+				1A0574AE2F1B28BA002B26CE /* ChoseToolViewController.m in Sources */,
 				1A84AA3F22BB1E1600FB2D63 /* UITextView+Placeholder.m in Sources */,
 				1A33E84626687C160028D5DA /* FormFlowLayoutView.m in Sources */,
 				1A0591DF26CCE4EA00311792 /* NSDate+GFCalendar.m in Sources */,
@@ -4178,6 +4499,7 @@
 				1A7BC5842697FF3600AD96B0 /* IQCCheckItemTableCell.m in Sources */,
 				1A90409D228CF41500ACA8ED /* DEHistoryListController.m in Sources */,
 				1AA6373E22802B49005050D8 /* DETaskModel.m in Sources */,
+				1AF7D1172F0E0F0100A75AB4 /* SafeCheckListModel.m in Sources */,
 				1A33E8552668AC190028D5DA /* LongedgeSizeTableCell.m in Sources */,
 				1A9FBF5B229E2A34001AF81E /* RevisePassWordTableCell.m in Sources */,
 				1A84AA9022BCB48B00FB2D63 /* SGQRCodeScanView.m in Sources */,
@@ -4211,11 +4533,13 @@
 				1A58855A22AF44FF00492D2F /* CECheckViewController.m in Sources */,
 				1AF0EED4230697730005546B /* JFMinimalNotificationArt.m in Sources */,
 				1AAA597722FD0EEE000421E3 /* ApplyAcceptanceModel.m in Sources */,
+				1ADB6B212F1DFE88003A77C9 /* MTTaskModel.m in Sources */,
 				1AA9D0252283DBE500BA65B8 /* DEReStockFilterView.m in Sources */,
 				1AAA31A62297C7C500078499 /* DECheckListController.m in Sources */,
 				1A6349AF2544255100B150F7 /* MCListModel.m in Sources */,
 				1A749FB422DFF1350005A231 /* AppDelegate+JPush.m in Sources */,
 				1A2F0E93266A01E000D7B3F4 /* QCAppearanceModel.m in Sources */,
+				1A68F6772F123C0400C0F234 /* MTToolHistoryController.m in Sources */,
 				1A8C6CD422A8FD2C00CFBB23 /* PassWordReSetAlertView.m in Sources */,
 				1A73365022719BD800133983 /* FFUnfinishController.m in Sources */,
 				1AAA31AF2297E07100078499 /* DEMemberStatusBaseController.m in Sources */,
@@ -4226,6 +4550,7 @@
 				1A7BC59F269937CA00AD96B0 /* IqcBugModel.m in Sources */,
 				1A0591DE26CCE4EA00311792 /* LXCalendarView.m in Sources */,
 				1AA9CFFB22827D8300BA65B8 /* DEMemberStatusController.m in Sources */,
+				1A0574A42F1A4E25002B26CE /* MTToolCell.m in Sources */,
 				1AE184EA2317B27E00B77789 /* OutStockTableViewCell.m in Sources */,
 				1A2F0E99266AFD3400D7B3F4 /* QCUnitCollectionCell.m in Sources */,
 				1A7A594427DAE7370047AF9C /* DeviceCorrectionController.m in Sources */,
@@ -4242,6 +4567,7 @@
 				1AA6377222826B47005050D8 /* DEMemberTableViewCell.m in Sources */,
 				1AAC7F93227033940078CE76 /* HGSegmentedPageViewController.m in Sources */,
 				1A46EB2626D351C600CDC600 /* GarbageListTableCell.m in Sources */,
+				1A0574AB2F1A5380002B26CE /* MultipleChooseView.m in Sources */,
 				1A5D4F5D253A8B8500A2D7A8 /* MCNewOrderRemarkTableCell.m in Sources */,
 				1A9040A3228D0A1600ACA8ED /* FilterModel.m in Sources */,
 				1A570BED22B78BE700765002 /* DECheckProblemController.m in Sources */,
@@ -4255,6 +4581,7 @@
 				1A5A1A012B9AA0D8007D0EAB /* IQCReportViewController.m in Sources */,
 				1A7A599F27DC45E70047AF9C /* DeviceCorrectDetailListController.m in Sources */,
 				1A46EAF526D322F300CDC600 /* WasterTaskListTableCell.m in Sources */,
+				1A68F6812F123C9800C0F234 /* MTToolUnFinishController.m in Sources */,
 				1A33E7F5266799410028D5DA /* QCValidityTableCell.m in Sources */,
 				1A90F6A9228A930B0034A157 /* DEFilterMaterialController.m in Sources */,
 				1A9040B1228E663000ACA8ED /* DEUnfinishSectionView.m in Sources */,
@@ -4272,6 +4599,7 @@
 				1A9F40F322FEB48E00E89F5A /* ApplyFinishAlertView.m in Sources */,
 				1ACE0C392429B6BC000BC59A /* SLMaintainResumeCell.m in Sources */,
 				1AAC7FB6227046C00078CE76 /* LoginOutTableViewCell.m in Sources */,
+				1A0574A82F1A504E002B26CE /* MTToolModel.m in Sources */,
 				1AAA31C22299157A00078499 /* CEAddOrderTableCell.m in Sources */,
 				1A33E7EF266783D20028D5DA /* QCHeaderSectionView.m in Sources */,
 				1AAA592F22FD0722000421E3 /* ApplyAcceptanceTypeTableCell.m in Sources */,
@@ -4284,6 +4612,7 @@
 				1A9040F3228EAFF200ACA8ED /* DESearchBaseController.m in Sources */,
 				1A58854822AF2CF900492D2F /* CheckMyTaskController.m in Sources */,
 				1AF74A8522A22793000458D7 /* DEPauseTableCell.m in Sources */,
+				1AF7D1102F0E031D00A75AB4 /* SafeCheckTaskCell.m in Sources */,
 				1A73364722719B8E00133983 /* FactoryBaseController.m in Sources */,
 				1A7D552D2271365500475466 /* MoudleModel.m in Sources */,
 				1A84AAA922BDD46E00FB2D63 /* UIImage+ChangeColor.m in Sources */,
@@ -4323,6 +4652,7 @@
 				1A73365322719BF100133983 /* FFHistoryController.m in Sources */,
 				1A46EB1426D33EA200CDC600 /* GarbageListModel.m in Sources */,
 				1AEC0CE2226ABA72000BDB81 /* LoginViewController.m in Sources */,
+				1AD3E7892F0CB76B00489444 /* SafeCheckHistoryController.m in Sources */,
 				1A749FC122E04A2A0005A231 /* HandleTableViewCell.m in Sources */,
 				1A734FDF2276813700133983 /* DENewOrderController.m in Sources */,
 				1AAC7F67226EC4B40078CE76 /* FunctionChosController.m in Sources */,
@@ -4330,6 +4660,7 @@
 				1AAA597A22FD16A1000421E3 /* DevicePartAlertView.m in Sources */,
 				1A2F0E8D266A011C00D7B3F4 /* AppearanceCollectionCell.m in Sources */,
 				1A73362A22714F3600133983 /* UserPrivileModel.m in Sources */,
+				1AF7D1142F0E0EA700A75AB4 /* SafeCheckModel.m in Sources */,
 				1A38EFAA22B47272006E7AA7 /* PutTextFieldTableCell.m in Sources */,
 				1AEC0CE6226ABD9E000BDB81 /* BaseNavViewController.m in Sources */,
 				1A7EF9E92665BF8A00502DE1 /* IQCSubmitPageController.m in Sources */,
@@ -4360,6 +4691,7 @@
 				1AEAEEFB228F8DAD005B38D8 /* DESearchModel.m in Sources */,
 				1A0591E126CCE4EA00311792 /* LXCalenderCell.m in Sources */,
 				1AEAEF05228FB6FB005B38D8 /* DESearchSortTableCell.m in Sources */,
+				1AB62D012F10AF2000A5B534 /* SafeTableHeadView.m in Sources */,
 				1ACE0C4A2429B715000BC59A /* SLMaintainResumeHeadView.m in Sources */,
 				1A0591F326CCEC9200311792 /* LxButton.m in Sources */,
 				1AEBC51722C05CFE008ECE12 /* UILabel+LabelSize.m in Sources */,
@@ -4374,6 +4706,7 @@
 				1A47EB4F26FACA8100B8D307 /* EMKeyBoardButton.m in Sources */,
 				1A9040F9228EB09300ACA8ED /* DESearchPushMessageController.m in Sources */,
 				1A2DE8842300E95600AFDD8B /* ReviseErrorController.m in Sources */,
+				1A05749D2F1A369F002B26CE /* SafeCheckMenuController.m in Sources */,
 				1AEAEF09228FDFFA005B38D8 /* DESearchTImeFilterView.m in Sources */,
 				1A734FEB2276819500133983 /* DEDetailViewController.m in Sources */,
 				1A4F0F9E2536F49E00D3C4CD /* MCHistoryListController.m in Sources */,
@@ -4429,10 +4762,12 @@
 				1AEAEF1022928022005B38D8 /* DESearchDetailTableCell.m in Sources */,
 				1AAB310C228CE561001CA0DC /* DEUnfinishListController.m in Sources */,
 				1A90F69022894D220034A157 /* DEReBackController.m in Sources */,
+				1AF7D11C2F0E126900A75AB4 /* SafeCheckDetailController.m in Sources */,
 				1AA6376B22825B1B005050D8 /* DEUnfinishChildrenController.m in Sources */,
 				1A7BC58D26984CA200AD96B0 /* IQCDatePickerView.m in Sources */,
 				1A6CE62129D52ADF00E544D9 /* DMHistoryViewController.m in Sources */,
 				1A05925C26CF934700311792 /* WasterAddInforModel.m in Sources */,
+				1A0574B12F1B2C84002B26CE /* ToolMaterialModel.m in Sources */,
 				1A7B00B12547B6F700C1E3A7 /* MCDetailCollectionCell.m in Sources */,
 				1A1728C826A28B8B002EDB39 /* QCDetailListModel.m in Sources */,
 				1AAB30FA228BAF8E001CA0DC /* DeviceRepairChosItemController.m in Sources */,
@@ -4459,6 +4794,8 @@
 				1A734FDC227680AC00133983 /* DeviceBaseController.m in Sources */,
 				1A570BE722B77DD900765002 /* DEProblemMessageController.m in Sources */,
 				1AE4267B22E1613500738C51 /* HandleModel.m in Sources */,
+				1AD3E7832F0CB6E800489444 /* SafeCheckTaskController.m in Sources */,
+				1A0574A02F1A4ABA002B26CE /* MTMenuController.m in Sources */,
 				1A734FD922767E2A00133983 /* FactoryModel.m in Sources */,
 				1A7EF9F526662B6700502DE1 /* QCDateAlertView.m in Sources */,
 				1AA9D00C2282B16300BA65B8 /* AssetAlertView.m in Sources */,
@@ -4477,6 +4814,7 @@
 				1A9FBF65229E5E5D001AF81E /* DepartmentCollectionCell.m in Sources */,
 				1A84AA3C22BA272300FB2D63 /* DEMaightBackStoreController.m in Sources */,
 				1A05920226CDE8B000311792 /* GarbageCreatViewController.m in Sources */,
+				1ADB6B1D2F1DE0D3003A77C9 /* MTTaskTableCell.m in Sources */,
 				1A938EA12693ECCF002C86CB /* IQCMainController.m in Sources */,
 				1A58855722AF44AD00492D2F /* CECheckListViewController.m in Sources */,
 				1A7D55302271389E00475466 /* BaseModel.m in Sources */,
@@ -4490,6 +4828,7 @@
 				1A05922626CE072900311792 /* GarbageOrdrModel.m in Sources */,
 				1A0591DA26CCE4EA00311792 /* LXCalendarHearder.m in Sources */,
 				1A9FBF62229E5D87001AF81E /* DepartmentLayout.m in Sources */,
+				1AD3E7862F0CB71E00489444 /* SafeCheckUnFinishController.m in Sources */,
 				1AAA592B22FD04F7000421E3 /* ApplayAcceptanceController.m in Sources */,
 				1AF74A8122A222F8000458D7 /* DEPauseRepairController.m in Sources */,
 				1A73500D2276D23E00133983 /* ToolBar.m in Sources */,
@@ -4503,7 +4842,6 @@
 				1A33E84726687C160028D5DA /* FormChartView.m in Sources */,
 				1A7350102276D58E00133983 /* ZHPickView.m in Sources */,
 				1A9418BE26AAB41700128F76 /* AppranceAlertReusableView.m in Sources */,
-				1A9FBF49229E1138001AF81E /* MTNewOrderTableCell.m in Sources */,
 				1A4F0F982536F44F00D3C4CD /* MConstructionBaseController.m in Sources */,
 				1A669CF6254D032600652B25 /* MCDetailWorkLogController.m in Sources */,
 			);
@@ -4684,7 +5022,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3.1.0;
+				CURRENT_PROJECT_VERSION = 3.1.1;
 				DEVELOPMENT_TEAM = AR6JJT98A5;
 				GCC_PREFIX_HEADER = SLPersonnelSystem/Configure/ServiceSystem.pch;
 				INFOPLIST_FILE = SLPersonnelSystem/Info.plist;
@@ -4694,7 +5032,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.1.0;
+				MARKETING_VERSION = 3.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.slpcb.SLPersonnelSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -4715,7 +5053,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3.1.0;
+				CURRENT_PROJECT_VERSION = 3.1.1;
 				DEVELOPMENT_TEAM = AR6JJT98A5;
 				GCC_PREFIX_HEADER = SLPersonnelSystem/Configure/ServiceSystem.pch;
 				INFOPLIST_FILE = SLPersonnelSystem/Info.plist;
@@ -4725,7 +5063,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.1.0;
+				MARKETING_VERSION = 3.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.slpcb.SLPersonnelSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

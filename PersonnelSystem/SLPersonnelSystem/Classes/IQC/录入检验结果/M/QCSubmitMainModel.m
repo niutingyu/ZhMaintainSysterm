@@ -54,23 +54,81 @@
         }
 
     }
+    
     for (QCColumnListModel *columnModel in _columnList) {
+        
         if ([columnModel.ColumnName containsString:@"偏差"]) {
-            _typeStr  =@"偏差";
+            if([_TextMethod containsString:@"文本框"]){
+                _typeStr =@"输入";
+            }else if ([_TextMethod containsString:@"下拉框"]){
+                _typeStr =@"coc";
+            }else if ([_TextMethod containsString:@"弹出框"]){
+                _typeStr =@"缺陷";
+            }else{
+                _typeStr  =@"偏差";
+            }
             break;
-        }else if ([columnModel.ColumnName containsString:@"缺陷"]||[_Name containsString:@"热应力"]||[_Name containsString:@"外观检查"]){
-            _typeStr  =@"缺陷";
+        }else if ([columnModel.ColumnName containsString:@"缺陷"]){
+            if([_TextMethod containsString:@"文本框"]){
+                _typeStr =@"输入";
+            }else if ([_TextMethod containsString:@"下拉框"]){
+                _typeStr =@"coc";
+            }else if ([_TextMethod containsString:@"弹出框"]){
+                _typeStr =@"缺陷";
+            }else{
+                _typeStr  =@"缺陷";
+            }
+           
             break;
         }else{
             if ([_Name containsString:@"供方COC"]||[_Name containsString:@"出货报告"]) {
-                _typeStr =@"coc";
-            }else if ([_Name containsString:@"剩余有效期"]){
-                _typeStr =@"有效期";
+                if([_TextMethod containsString:@"文本框"]){
+                    _typeStr =@"输入";
+                }else if ([_TextMethod containsString:@"下拉框"]){
+                    _typeStr =@"coc";
+                }else if ([_TextMethod containsString:@"弹出框"]){
+                    _typeStr =@"缺陷";
+                }else{
+                    _typeStr =@"coc";
+                }
+            }else if ([_Name containsString:@"热应力"]||[_Name containsString:@"外观检查"]){
+                if([_TextMethod containsString:@"文本框"]){
+                    _typeStr =@"输入";
+                }else if ([_TextMethod containsString:@"下拉框"]){
+                    _typeStr =@"coc";
+                }else if ([_TextMethod containsString:@"弹出框"]){
+                    _typeStr =@"缺陷";
+                }else{
+                    _typeStr  =@"缺陷";
+                }
+               
+            }
+            else if ([_Name containsString:@"剩余有效期"]){
+                if([_TextMethod containsString:@"文本框"]){
+                    _typeStr =@"输入";
+                }else if ([_TextMethod containsString:@"下拉框"]){
+                    _typeStr =@"coc";
+                }else if ([_TextMethod containsString:@"弹出框"]){
+                    _typeStr =@"缺陷";
+                }else{
+                    _typeStr =@"有效期";
+                }
+                
             }else{
-                _typeStr =@"输入";
+                if([_TextMethod containsString:@"文本框"]){
+                    _typeStr =@"输入";
+                }else if ([_TextMethod containsString:@"下拉框"]){
+                    _typeStr =@"coc";
+                }else if ([_TextMethod containsString:@"弹出框"]){
+                    _typeStr =@"缺陷";
+                }else{
+                    _typeStr =@"输入";
+                }
+               
             }
         }
     }
+  
     //coc项目数组
     if ([_typeStr isEqualToString:@"coc"]) {
         for (QCColumnListModel * model in _columnList) {

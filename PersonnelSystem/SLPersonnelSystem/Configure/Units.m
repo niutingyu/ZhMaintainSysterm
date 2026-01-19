@@ -286,4 +286,24 @@
     CGRect rect  =[string?:@"" boundingRectWithSize:CGSizeMake(width-10, 0) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:dic context:nil];
     return rect.size.height;
 }
+
+//字符串转化为字典
++(NSDictionary*)stringToDictionary:(NSString*)string{
+    if (string == nil)
+    {
+        return nil;
+    }
+    
+    NSData *jsonData = [string dataUsingEncoding:NSUTF8StringEncoding];
+    
+    NSError *err;
+    
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&err];
+    if (err)
+    {
+        NSLog(@"json解析失败");
+        return nil;
+    }
+    return dic;
+}
 @end

@@ -16,12 +16,15 @@
 #import "IQCMainController.h"
 
 
+
 #import "MoudleModel.h"
 #import "MoudleListModel.h"
 #import "DeviceModel.h"
 
 #import "DeviceRepairChosItemController.h"
 #import "ManagerDeviceTabBarController.h"
+#import "SafeCheckMenuController.h"
+#import "MTMenuController.h"
 
 @interface MainChoseItemsController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property (nonatomic,strong)UICollectionView * collectionView;
@@ -193,6 +196,23 @@ static NSString *const reusableViewId =@"reusableId";
                 [weakSelf.navigationController pushViewController:IQCController animated:YES];
                 return;
                 
+            }if([titleStr isEqualToString:@"设备安全点检"]){
+                if ([deviceStr isEqualToString:@"iPad"]) {
+                    return;
+                }
+                SafeCheckMenuController * controller = [[SafeCheckMenuController alloc]init];
+                
+                [weakSelf.navigationController pushViewController:controller animated:YES];
+               
+            }
+            if([titleStr isEqualToString:@"维修工具管理"]){
+                if ([deviceStr isEqualToString:@"iPad"]) {
+                    return;
+                }
+                MTMenuController * controller = [[MTMenuController alloc]init];
+                
+                [weakSelf.navigationController pushViewController:controller animated:YES];
+               
             }
             
             if (arr.count >0) {
@@ -250,8 +270,8 @@ static NSString *const reusableViewId =@"reusableId";
             }
             
         }else{
-            if ([dictModel[@"moduleName"] isEqualToString:@"设备维修"]||[dictModel[@"moduleName"] isEqualToString:@"设备点检保养"]||[dictModel[@"moduleName"] isEqualToString:@"厂务施工"]||[dictModel[@"moduleName"] isEqualToString:@"设备履历查询"]||[dictModel[@"moduleName"] isEqualToString:@"废品变卖"]||[dictModel[@"moduleName"] isEqualToString:@"设备校正"] ||[dictModel[@"moduleName"] isEqualToString:@"关键配件管理"]) {
-                if (![self.mouleArray containsObject:@"设备维修"]||![self.mouleArray containsObject:@"设备点检保养"]||![self.mouleArray containsObject:@"厂务施工"]||![self.mouleArray containsObject:@"设备履历查询"]||![self.mouleArray containsObject:@"设备校正"]||![self.mouleArray containsObject:@"关键配件管理"]) {
+            if ([dictModel[@"moduleName"] isEqualToString:@"设备维修"]||[dictModel[@"moduleName"] isEqualToString:@"设备点检保养"]||[dictModel[@"moduleName"] isEqualToString:@"厂务施工"]||[dictModel[@"moduleName"] isEqualToString:@"设备履历查询"]||[dictModel[@"moduleName"] isEqualToString:@"废品变卖"]||[dictModel[@"moduleName"] isEqualToString:@"设备校正"] ||[dictModel[@"moduleName"] isEqualToString:@"关键配件管理"]||[dictModel[@"moduleName"] isEqualToString:@"设备安全点检"]) {
+                if (![self.mouleArray containsObject:@"设备维修"]||![self.mouleArray containsObject:@"设备点检保养"]||![self.mouleArray containsObject:@"厂务施工"]||![self.mouleArray containsObject:@"设备履历查询"]||![self.mouleArray containsObject:@"设备校正"]||![self.mouleArray containsObject:@"关键配件管理"]||![dictModel[@"moduleName"] isEqualToString:@"设备安全点检"]) {
                     [self.mouleArray addObject:dictModel];
                     [self.moudleIdArray addObject:dictModel[@"moduleId"]];
                 }

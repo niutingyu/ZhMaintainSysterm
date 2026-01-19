@@ -60,6 +60,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 //根据文字计算高度
 +(CGFloat)calculateRowHeight:(NSString*)string width:(CGFloat)width;
+
++(NSDictionary*)stringToDictionary:(NSString*)string;
+
 @end
 
 NS_ASSUME_NONNULL_END

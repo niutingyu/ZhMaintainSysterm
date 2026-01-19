@@ -43,8 +43,12 @@
             }else if ([netMoudleString isEqualToString:@"废品变卖"]&&[localMoudleString isEqualToString:@"废品变卖"]){
                 [_moudleMutableArray addObject:localDict];
             }else if ([netMoudleString isEqualToString:@"年度校正设备管理"]&&[localMoudleString isEqualToString:@"设备校正"]){
-                [_moudleMutableArray addObject:localDict];
+                //[_moudleMutableArray addObject:localDict];
             }else if ([netMoudleString isEqualToString:@"设备点检保养"]&&[localMoudleString isEqualToString:@"关键配件管理"]){
+                //[_moudleMutableArray addObject:localDict];
+            }else if ([netMoudleString isEqualToString:@"安全点检模板管理"]&&[localMoudleString isEqualToString:@"设备安全点检"]){
+                [_moudleMutableArray addObject:localDict];
+            }else if ([netMoudleString isEqualToString:@"维修工具管理"]&&[localMoudleString isEqualToString:@"维修工具管理"]){
                 [_moudleMutableArray addObject:localDict];
             }
         }

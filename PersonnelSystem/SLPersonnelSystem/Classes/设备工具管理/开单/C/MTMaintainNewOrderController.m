@@ -7,31 +7,39 @@
 //
 
 #import "MTMaintainNewOrderController.h"
-#import "MTNewOrderTableCell.h"
+#import "MTToolCell.h"
 #import "MTToolTypeTableCell.h"
 #import "MTFootAddView.h"
+#import "ChoseToolViewController.h"
+#import "BaseNavViewController.h"
 
-@interface MTMaintainNewOrderController ()<UITextFieldDelegate>
+@interface MTMaintainNewOrderController ()<UITextViewDelegate>
 {
     NSInteger _addSection;
     NSMutableArray * _sectionArray;
     
 }
+
+@property (nonatomic,copy)NSString *reasonString;
 @end
 
 @implementation MTMaintainNewOrderController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title =@"开单";
     _sectionArray = [NSMutableArray array];
     [_sectionArray addObject:@"维修工具"];
     [self.view addSubview:self.tableView];
     self.tableView.backgroundColor = RGBA(242, 242, 242, 1);
     self.tableView.rowHeight = 50.0f;
-    NSArray * arr = @[@"申请人",@"申请时间",@"原因"];
-    [self.datasource addObjectsFromArray:arr];
+    
     [self.tableView registerNib:[UINib nibWithNibName:@"MTToolTypeTableCell" bundle:nil] forCellReuseIdentifier:@"typeReusedId"];
-    [self.tableView registerNib:[UINib nibWithNibName:@"MTNewOrderTableCell" bundle:nil] forCellReuseIdentifier:@"orderReusedId"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"MTToolCell" bundle:nil] forCellReuseIdentifier:@"orderReusedId"];
+    
+    UIBarButtonItem *sureButton = [[UIBarButtonItem alloc] initWithTitle:@"提交" style:UIBarButtonItemStyleDone target:self action:@selector(onOKClick)];
+    self.navigationItem.rightBarButtonItem = sureButton;
+  
   
     
     
@@ -39,25 +47,25 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (section == 0) {
-        return self.datasource.count;
+        return 1;
     }
-    return _sectionArray.count;
+    return self.datasource.count;
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 2;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
-        return 50.0f;
+        return 120.0f;
     }else{
-        return 88.0f;
+        return 48.0f;
     }
 }
 -(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     return [UIView new];
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 5.0f;
+    return 2.0f;
 }
 -(UIView*)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
     if (section ==0) {
@@ -69,8 +77,26 @@
         [footView addSubview:addView];
         KWeakSelf
         addView.addMaterialBlock = ^{
-            [self->_sectionArray addObject:@"维修工具"];
-            [weakSelf.tableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationFade];
+
+            ChoseToolViewController *controller =[[ChoseToolViewController alloc]init];
+            BaseNavViewController *nav = [[BaseNavViewController alloc]initWithRootViewController:controller];
+           
+            [self presentViewController:nav animated:YES completion:nil];
+            [controller setMultipleChooseBtnClick:^(ToolMaterialModel * _Nonnull materialModel) {
+               
+                for (ToolMaterialModel *m in weakSelf.datasource) {
+                    if([m.ToolName isEqualToString:materialModel.ToolName]){
+                        [Units showErrorStatusWithString:@"选择的物料已在列表中"];
+                        return;
+                    }
+                }
+                materialModel.CustomCount =@"1";
+                [weakSelf.datasource addObject:materialModel];
+                
+                [weakSelf.tableView reloadData];
+
+            }];
+            
         };
         return footView;
     }
@@ -78,7 +104,7 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     if (section ==0) {
-        return CGFLOAT_MIN;
+        return 0;
     }else{
       return 48.0f;
     }
@@ -86,26 +112,23 @@
 }
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section ==0) {
-        MTToolTypeTableCell * cell =[tableView dequeueReusableCellWithIdentifier:@"typeReusedId"];
-        cell.tipLab.text = [NSString stringWithFormat:@"%@:",self.datasource[indexPath.row]];
-        cell.inputTextField.delegate = self;
-        NSString * tipString = self.datasource[indexPath.row];
-        if ([tipString isEqualToString:@"申请人"]||[tipString isEqualToString:@"申请时间"]) {
-            cell.inputTextField.enabled = NO;
-        }else{
-            cell.inputTextField.enabled = YES;
-        }
+        MTToolCell * cell = [tableView dequeueReusableCellWithIdentifier:@"orderReusedId"];
         
+        
+        
+        cell.lalLab.text =[NSString stringWithFormat:@"申请人:%@",USERDEFAULT_object(CodeName)];
+        self.reasonString =cell.tfValue.text;
         return cell;
     }else{
-        MTNewOrderTableCell * cell = [tableView dequeueReusableCellWithIdentifier:@"orderReusedId"];
+        MTToolTypeTableCell * cell =[tableView dequeueReusableCellWithIdentifier:@"typeReusedId"];
+        ToolMaterialModel *model = self.datasource[indexPath.row];
+        [cell setupCellWithModel:model];
+        cell.materialModel =model;
         return cell;
     }
 }
 
--(void)textFieldDidEndEditing:(UITextField *)textField{
-    
-}
+
 -(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section ==1) {
         return YES;
@@ -120,12 +143,61 @@
 }
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section ==1) {
-        if (_sectionArray.count ==1) {
-            [Units showErrorStatusWithString:@"已是最小数量"];
-            return;
+        [self.datasource removeObjectAtIndex:indexPath.row];
+        if(self.datasource.count ==0){
+            [self.tableView reloadData];
+        }else{
+            [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationNone];
         }
-        [_sectionArray removeObjectAtIndex:indexPath.row];
-        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationNone];
+       
     }
 }
+
+-(void)onOKClick{
+    [self.view endEditing:YES];
+    if(self.datasource.count ==0){
+        [Units showErrorStatusWithString:@"借用工具不能为空!"];
+        return;
+    }
+    
+    
+    if(self.reasonString.length ==0){
+        [Units showErrorStatusWithString:@"借用原因不能为空!"];
+        return;
+    }
+    
+    NSMutableDictionary *params =[NSMutableDictionary dictionary];
+    NSMutableDictionary *dict =[NSMutableDictionary dictionary];
+    
+    [dict setObject:USERDEFAULT_object(USERID) forKey:@"LoanBy"]; //借用人
+    [dict setObject:self.reasonString forKey:@"LoanReasion"]; // 借用原因
+    [dict setObject:@"0" forKey:@"Status"]; // 单状态 --> 待借
+    NSMutableArray *toolsArray =[NSMutableArray array];
+    for (ToolMaterialModel *materialModel in self.datasource) {
+        NSMutableDictionary *toolsDict =[NSMutableDictionary dictionary];
+        [toolsDict setObject:materialModel.Id forKey:@"ToolsId"];//
+        if(materialModel.ToolCount==NULL||materialModel.ToolCount ==nil){
+            materialModel.ToolCount =@"1";
+        }
+        [toolsDict setObject:materialModel.ToolCount forKey:@"ToolsCount"]; // 工具数
+        [toolsArray addObject:toolsDict];
+    }
+    [params setObject:[Units dictionaryToJson:dict] forKey:@"model"];
+    [params setObject:[Units arrayToJson:toolsArray] forKey:@"toolsArray"];
+    NSString * url =@"it/MaintainEvent/createSave";
+    [Units showLoadStatusWithString:@"加载中!!!"];
+    [HttpTool POST:[url getWholeUrl] param:params success:^(id  _Nonnull responseObject) {
+        if ([responseObject[@"status"] boolValue] == NO) {
+            [Units showStatusWithStutas:responseObject[@"info"]];
+            [self.datasource removeAllObjects];
+            self.reasonString =@"";
+            
+        }else {
+            [Units showErrorStatusWithString:responseObject[@"info"]];
+        }
+    } error:^(NSString * _Nonnull error) {
+        [Units hideView];
+    }];
+}
+
 @end

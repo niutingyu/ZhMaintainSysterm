@@ -34,6 +34,9 @@ NS_ASSUME_NONNULL_BEGIN
  单位
  */
 @property (nonatomic,copy)NSString *TestUnit;
+
+// 录入方式
+@property (nonatomic,copy)NSString *TextMethod;
 /**
  检查标准
  */
