@@ -153,6 +153,15 @@
 		1A5A82C426AE65FD009BDC65 /* QCAppranceFormCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A82C326AE65FD009BDC65 /* QCAppranceFormCollectionCell.m */; };
 		1A5BA00E26D622D00094D32A /* IqcTreatment.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A5BA00D26D622D00094D32A /* IqcTreatment.json */; };
 		1A5BA01D26D629900094D32A /* IqcBugAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BA01C26D629900094D32A /* IqcBugAlertView.m */; };
+		1A5BF7B82F23492100C67FA3 /* SafeCheckChoseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BF7B62F23492100C67FA3 /* SafeCheckChoseTableCell.m */; };
+		1A5BF7B92F23492100C67FA3 /* SafeCheckChoseTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5BF7B72F23492100C67FA3 /* SafeCheckChoseTableCell.xib */; };
+		1A5BF7BD2F2360CC00C67FA3 /* SafeCheckTextTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BF7BB2F2360CC00C67FA3 /* SafeCheckTextTableCell.m */; };
+		1A5BF7BE2F2360CC00C67FA3 /* SafeCheckTextTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5BF7BC2F2360CC00C67FA3 /* SafeCheckTextTableCell.xib */; };
+		1A5BF7C22F236FDC00C67FA3 /* SafeCheckResultTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BF7C02F236FDC00C67FA3 /* SafeCheckResultTableCell.m */; };
+		1A5BF7C32F236FDC00C67FA3 /* SafeCheckResultTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5BF7C12F236FDC00C67FA3 /* SafeCheckResultTableCell.xib */; };
+		1A5BF7C72F246FD900C67FA3 /* SafeCheckLogTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BF7C52F246FD900C67FA3 /* SafeCheckLogTableCell.m */; };
+		1A5BF7C82F246FD900C67FA3 /* SafeCheckLogTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5BF7C62F246FD900C67FA3 /* SafeCheckLogTableCell.xib */; };
+		1A5BF7CE2F24721900C67FA3 /* SafeCheckUserLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BF7CD2F24721900C67FA3 /* SafeCheckUserLogModel.m */; };
 		1A5CAEB0229CC770005A32B1 /* CEFIlterConditionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5CAEAF229CC76F005A32B1 /* CEFIlterConditionController.m */; };
 		1A5D4F5D253A8B8500A2D7A8 /* MCNewOrderRemarkTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D4F5B253A8B8500A2D7A8 /* MCNewOrderRemarkTableCell.m */; };
 		1A5D4F5E253A8B8500A2D7A8 /* MCNewOrderRemarkTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5D4F5C253A8B8500A2D7A8 /* MCNewOrderRemarkTableCell.xib */; };
@@ -789,6 +798,20 @@
 		1A5BA00D26D622D00094D32A /* IqcTreatment.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IqcTreatment.json; sourceTree = "<group>"; };
 		1A5BA01B26D629900094D32A /* IqcBugAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IqcBugAlertView.h; sourceTree = "<group>"; };
 		1A5BA01C26D629900094D32A /* IqcBugAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IqcBugAlertView.m; sourceTree = "<group>"; };
+		1A5BF7B52F23492100C67FA3 /* SafeCheckChoseTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeCheckChoseTableCell.h; sourceTree = "<group>"; };
+		1A5BF7B62F23492100C67FA3 /* SafeCheckChoseTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeCheckChoseTableCell.m; sourceTree = "<group>"; };
+		1A5BF7B72F23492100C67FA3 /* SafeCheckChoseTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SafeCheckChoseTableCell.xib; sourceTree = "<group>"; };
+		1A5BF7BA2F2360CC00C67FA3 /* SafeCheckTextTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeCheckTextTableCell.h; sourceTree = "<group>"; };
+		1A5BF7BB2F2360CC00C67FA3 /* SafeCheckTextTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeCheckTextTableCell.m; sourceTree = "<group>"; };
+		1A5BF7BC2F2360CC00C67FA3 /* SafeCheckTextTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SafeCheckTextTableCell.xib; sourceTree = "<group>"; };
+		1A5BF7BF2F236FDC00C67FA3 /* SafeCheckResultTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeCheckResultTableCell.h; sourceTree = "<group>"; };
+		1A5BF7C02F236FDC00C67FA3 /* SafeCheckResultTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeCheckResultTableCell.m; sourceTree = "<group>"; };
+		1A5BF7C12F236FDC00C67FA3 /* SafeCheckResultTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SafeCheckResultTableCell.xib; sourceTree = "<group>"; };
+		1A5BF7C42F246FD900C67FA3 /* SafeCheckLogTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeCheckLogTableCell.h; sourceTree = "<group>"; };
+		1A5BF7C52F246FD900C67FA3 /* SafeCheckLogTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeCheckLogTableCell.m; sourceTree = "<group>"; };
+		1A5BF7C62F246FD900C67FA3 /* SafeCheckLogTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SafeCheckLogTableCell.xib; sourceTree = "<group>"; };
+		1A5BF7CC2F24721900C67FA3 /* SafeCheckUserLogModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeCheckUserLogModel.h; sourceTree = "<group>"; };
+		1A5BF7CD2F24721900C67FA3 /* SafeCheckUserLogModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeCheckUserLogModel.m; sourceTree = "<group>"; };
 		1A5CAEAE229CC76F005A32B1 /* CEFIlterConditionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEFIlterConditionController.h; sourceTree = "<group>"; };
 		1A5CAEAF229CC76F005A32B1 /* CEFIlterConditionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CEFIlterConditionController.m; sourceTree = "<group>"; };
 		1A5D4F5A253A8B8500A2D7A8 /* MCNewOrderRemarkTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCNewOrderRemarkTableCell.h; sourceTree = "<group>"; };
@@ -3605,6 +3628,18 @@
 			children = (
 				1AB62CFF2F10AF1F00A5B534 /* SafeTableHeadView.h */,
 				1AB62D002F10AF1F00A5B534 /* SafeTableHeadView.m */,
+				1A5BF7B52F23492100C67FA3 /* SafeCheckChoseTableCell.h */,
+				1A5BF7B62F23492100C67FA3 /* SafeCheckChoseTableCell.m */,
+				1A5BF7B72F23492100C67FA3 /* SafeCheckChoseTableCell.xib */,
+				1A5BF7BA2F2360CC00C67FA3 /* SafeCheckTextTableCell.h */,
+				1A5BF7BB2F2360CC00C67FA3 /* SafeCheckTextTableCell.m */,
+				1A5BF7BC2F2360CC00C67FA3 /* SafeCheckTextTableCell.xib */,
+				1A5BF7BF2F236FDC00C67FA3 /* SafeCheckResultTableCell.h */,
+				1A5BF7C02F236FDC00C67FA3 /* SafeCheckResultTableCell.m */,
+				1A5BF7C12F236FDC00C67FA3 /* SafeCheckResultTableCell.xib */,
+				1A5BF7C42F246FD900C67FA3 /* SafeCheckLogTableCell.h */,
+				1A5BF7C52F246FD900C67FA3 /* SafeCheckLogTableCell.m */,
+				1A5BF7C62F246FD900C67FA3 /* SafeCheckLogTableCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3713,6 +3748,8 @@
 				1AF7D1132F0E0EA700A75AB4 /* SafeCheckModel.m */,
 				1AF7D1152F0E0F0100A75AB4 /* SafeCheckListModel.h */,
 				1AF7D1162F0E0F0100A75AB4 /* SafeCheckListModel.m */,
+				1A5BF7CC2F24721900C67FA3 /* SafeCheckUserLogModel.h */,
+				1A5BF7CD2F24721900C67FA3 /* SafeCheckUserLogModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -4295,6 +4332,7 @@
 				1AF7D1112F0E031D00A75AB4 /* SafeCheckTaskCell.xib in Resources */,
 				1AE9B03422A665BF00D57E15 /* DEBackStoreDetailCheckTableCell.xib in Resources */,
 				1A0591DB26CCE4EA00311792 /* LXCalenderCell.xib in Resources */,
+				1A5BF7B92F23492100C67FA3 /* SafeCheckChoseTableCell.xib in Resources */,
 				1AAC7FBC227055CD0078CE76 /* FCItemCollectionViewCell.xib in Resources */,
 				1A7B00A12547A90D00C1E3A7 /* MCDetailOPerationLogCell.xib in Resources */,
 				1AF74A8622A22793000458D7 /* DEPauseTableCell.xib in Resources */,
@@ -4304,6 +4342,7 @@
 				1AA9D0002282865300BA65B8 /* DEPickNewOrderTableCell.xib in Resources */,
 				1A071CE3254AA1D200B0DA25 /* MCOperateRemarkTableCell.xib in Resources */,
 				1A7B00992547A2CF00C1E3A7 /* MCDetailMaintainTableCell.xib in Resources */,
+				1A5BF7BE2F2360CC00C67FA3 /* SafeCheckTextTableCell.xib in Resources */,
 				1A58855022AF3FB100492D2F /* CEMyTaskTableViewCell.xib in Resources */,
 				1ACE0C3A2429B6BC000BC59A /* SLMaintainResumeCell.xib in Resources */,
 				1A6349A52543FB1100B150F7 /* MCHistoryTableCell.xib in Resources */,
@@ -4343,6 +4382,7 @@
 				1AE184F32317C32500B77789 /* OutStockAlertTableCell.xib in Resources */,
 				1A3DF13B26F48ED4009F2EB8 /* button_keyboard_shouqi@2x.png in Resources */,
 				1A736330255E105A008A5855 /* ModuleListArray.plist in Resources */,
+				1A5BF7C82F246FD900C67FA3 /* SafeCheckLogTableCell.xib in Resources */,
 				1AAC7FA022703A5D0078CE76 /* BaseTableViewCell.xib in Resources */,
 				1A5D4F63253AC4BB00A2D7A8 /* MCMyTaskTableViewCell.xib in Resources */,
 				1A3DF13E26F48ED4009F2EB8 /* CH_EN_icon_unsel@3x.png in Resources */,
@@ -4372,6 +4412,7 @@
 				1AAA31C32299157A00078499 /* CEAddOrderTableCell.xib in Resources */,
 				1AAC7FB7227046C00078CE76 /* LoginOutTableViewCell.xib in Resources */,
 				1A749FC222E04A2A0005A231 /* HandleTableViewCell.xib in Resources */,
+				1A5BF7C32F236FDC00C67FA3 /* SafeCheckResultTableCell.xib in Resources */,
 				1AEC0CA4226AB705000BDB81 /* Main.storyboard in Resources */,
 				1A7B00B22547B6F700C1E3A7 /* MCDetailCollectionCell.xib in Resources */,
 				1A570BF222B8653B00765002 /* DEProblemTableCell.xib in Resources */,
@@ -4455,6 +4496,7 @@
 				1A95A8B822F563F20070F838 /* AlertView.m in Sources */,
 				1A9FBF5F229E5D06001AF81E /* OrganaztionViewController.m in Sources */,
 				1A938EA72693F2EA002C86CB /* QCMainHeadTableView.m in Sources */,
+				1A5BF7B82F23492100C67FA3 /* SafeCheckChoseTableCell.m in Sources */,
 				1A9FBF45229E0F60001AF81E /* MTMaintainNewOrderController.m in Sources */,
 				1AA63767228185B0005050D8 /* DEUnFinishTableCell.m in Sources */,
 				1A7A59B427DC49D70047AF9C /* DeviceCorrectionUserLogModel.m in Sources */,
@@ -4529,6 +4571,7 @@
 				1AAA31AC2297C83100078499 /* DERepairListController.m in Sources */,
 				1A7EF9E02665BDD500502DE1 /* IQCBaseController.m in Sources */,
 				1A98641F270415A900C6F42D /* QCCOCCollectionViewCell.m in Sources */,
+				1A5BF7C22F236FDC00C67FA3 /* SafeCheckResultTableCell.m in Sources */,
 				1A7A597227DAF60D0047AF9C /* DeviceCorrectionTaskListModel.m in Sources */,
 				1A58855A22AF44FF00492D2F /* CECheckViewController.m in Sources */,
 				1AF0EED4230697730005546B /* JFMinimalNotificationArt.m in Sources */,
@@ -4705,11 +4748,13 @@
 				1AEC0CE9226AC54A000BDB81 /* HttpTool.m in Sources */,
 				1A47EB4F26FACA8100B8D307 /* EMKeyBoardButton.m in Sources */,
 				1A9040F9228EB09300ACA8ED /* DESearchPushMessageController.m in Sources */,
+				1A5BF7C72F246FD900C67FA3 /* SafeCheckLogTableCell.m in Sources */,
 				1A2DE8842300E95600AFDD8B /* ReviseErrorController.m in Sources */,
 				1A05749D2F1A369F002B26CE /* SafeCheckMenuController.m in Sources */,
 				1AEAEF09228FDFFA005B38D8 /* DESearchTImeFilterView.m in Sources */,
 				1A734FEB2276819500133983 /* DEDetailViewController.m in Sources */,
 				1A4F0F9E2536F49E00D3C4CD /* MCHistoryListController.m in Sources */,
+				1A5BF7CE2F24721900C67FA3 /* SafeCheckUserLogModel.m in Sources */,
 				1AA9D01A2282C85200BA65B8 /* DEPickChosMaterialModel.m in Sources */,
 				1A7336632271A99800133983 /* FFAddNewOrderTableCell.m in Sources */,
 				1AE9B03722A7937600D57E15 /* PersonalSetController.m in Sources */,
@@ -4746,6 +4791,7 @@
 				1AE4267E22E161AE00738C51 /* HandleTaskModel.m in Sources */,
 				1A33E8612668B3AD0028D5DA /* DiagonalSizeTableCell.m in Sources */,
 				1A55881C254BB32000001489 /* MCDetailExtendSchudleController.m in Sources */,
+				1A5BF7BD2F2360CC00C67FA3 /* SafeCheckTextTableCell.m in Sources */,
 				1A1728B926A28844002EDB39 /* QCSubmitMainModel.m in Sources */,
 				1A734FD02273DB5300133983 /* MyLanuchViewController.m in Sources */,
 				1A8E47D126904EDE003B078D /* MaintainErrorTableCell.m in Sources */,
@@ -5022,17 +5068,17 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3.1.1;
+				CURRENT_PROJECT_VERSION = 3.1.2;
 				DEVELOPMENT_TEAM = AR6JJT98A5;
 				GCC_PREFIX_HEADER = SLPersonnelSystem/Configure/ServiceSystem.pch;
 				INFOPLIST_FILE = SLPersonnelSystem/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "深联管理系统";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.1.1;
+				MARKETING_VERSION = 3.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.slpcb.SLPersonnelSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -5053,17 +5099,17 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3.1.1;
+				CURRENT_PROJECT_VERSION = 3.1.2;
 				DEVELOPMENT_TEAM = AR6JJT98A5;
 				GCC_PREFIX_HEADER = SLPersonnelSystem/Configure/ServiceSystem.pch;
 				INFOPLIST_FILE = SLPersonnelSystem/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "深联管理系统";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.1.1;
+				MARKETING_VERSION = 3.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.slpcb.SLPersonnelSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

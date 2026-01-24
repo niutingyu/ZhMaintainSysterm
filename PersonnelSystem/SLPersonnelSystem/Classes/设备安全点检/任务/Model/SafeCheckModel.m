@@ -19,11 +19,13 @@
     }else if (_Status  ==1){
         _statusStr =@"点检中";
     }else if (_Status ==2){
-        _statusStr =@"已接单";
+        _statusStr =@"已结单";
+    }else if (_Status ==3){
+        _statusStr =@"复核中";
     }
 }
 +(NSDictionary*)mj_objectClassInArray{
-    return @{@"checkList":[SafeCheckListModel class]};
+    return @{@"checkList":[SafeCheckListModel class],@"UserOperateArray":[SafeCheckUserLogModel class]};
 }
 
 @end

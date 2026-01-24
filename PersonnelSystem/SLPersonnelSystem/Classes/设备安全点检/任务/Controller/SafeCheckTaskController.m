@@ -21,6 +21,10 @@
     [self getTaskList];
     [self.view addSubview:self.tableView];
     [self.tableView registerNib:[UINib nibWithNibName:@"SafeCheckTaskCell" bundle:nil] forCellReuseIdentifier:@"cellId"];
+    KWeakSelf
+    self.tableView.mj_header =[MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [weakSelf getTaskList];
+    }];
     
     
     
@@ -67,10 +71,11 @@
             [weakSelf.datasource addObjectsFromArray:modelArr];
             
         }
+        [weakSelf.tableView .mj_header endRefreshing];
         [weakSelf.tableView reloadData];
         debugLog(@" == %@",responseObject);
     } error:^(NSString * _Nonnull error) {
-        
+        [weakSelf.tableView .mj_header endRefreshing];
     }];
     
 }

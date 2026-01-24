@@ -24,7 +24,7 @@
 
 -(void)setupFrame{
     UILabel * titleLab =[[UILabel alloc]init];
-    titleLab.frame  = CGRectMake(8, 10, 100, 25);
+    titleLab.frame  = CGRectMake(8, 10, 260, 25);
     titleLab.textColor  =[UIColor whiteColor];
     self.titleLab  =titleLab;
     [self addSubview:titleLab];

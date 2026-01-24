@@ -17,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self.view addSubview:self.tableView];
+    
+    [self getupData];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -31,13 +34,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MTTaskTableCell *cell =[tableView dequeueReusableCellWithIdentifier:@"CYFMeetListViewCell"];
     if (cell == nil) {
-        cell = [[[NSBundle mainBundle]loadNibNamed:@"CYFMeetListViewCell" owner:nil options:nil]firstObject];
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"MTTaskTableCell" owner:nil options:nil]firstObject];
     }
     
     MTTaskModel *model = self.datasource[indexPath.section];
-    cell.reasonLab.text = [NSString stringWithFormat:@"借出原因:%@",model.LoanReasion];
-    cell.depLab.text = [NSString stringWithFormat:@"负责人:%@--%@",model.DepName,model.FName];
-    cell.dateLab.text = [NSString stringWithFormat:@"申请借出时间:%@",model.CreatedOn];
+    cell.reasonLab.text = model.LoanReasion;
+   // cell.depLab.text = [NSString stringWithFormat:@"申请部门:%@",model.DepName];
+    cell.dateLab.text = [Units dataFromString:model.CreatedOn withFormat:@"yy"];
     cell.codeLab.text = [NSString stringWithFormat:@"单号:%@",model.TaskCode];
     
     NSString *StatusStr =@"";
@@ -86,7 +89,7 @@
     // 借用人 借用时间 单状态 借用备注 借用工具几种
     NSMutableDictionary *params =[NSMutableDictionary dictionary];
     [params setObject:USERDEFAULT_object(USERID) forKey:@"UserId"];
-    [params setObject:@"0" forKey:@"CYFModuleType"];
+    [params setObject:@"1" forKey:@"CYFModuleType"];
 
     [Units showLoadStatusWithString:@"加载中!!!"];
     KWeakSelf

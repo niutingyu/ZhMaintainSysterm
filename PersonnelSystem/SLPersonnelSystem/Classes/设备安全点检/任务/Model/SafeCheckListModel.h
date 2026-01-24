@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy)NSString *IsChoice ;
 @property (nonatomic,copy)NSString *CheckName;
 
+@property (nonatomic,copy)NSString *isEdit;
+
 @end
 
 NS_ASSUME_NONNULL_END

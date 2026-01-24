@@ -8,6 +8,7 @@
 
 #import "BaseModel.h"
 #import "SafeCheckListModel.h"
+#import "SafeCheckUserLogModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SafeCheckModel : BaseModel
@@ -30,6 +31,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,copy)NSString *AcceptTime ;
 
+@property (nonatomic,copy)NSString *AcceptUserName;
+
 @property (nonatomic,copy)NSString *FinishTime ;
 
 @property (nonatomic,copy)NSString *ReCheckBy ;
@@ -45,6 +48,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy)NSString *ImplementationPlan;
 
 @property (nonatomic,strong)NSArray *OperateArray;
+
+@property (nonatomic,strong)NSArray *UserOperateArray;
 @end
 
 NS_ASSUME_NONNULL_END
