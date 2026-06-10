@@ -42,7 +42,7 @@ static NSString * const progressCellId =@"progressCellId";
     self.title = @"申请验收";
   
    
-    NSArray * titles = @[@"是否人为",@"处理过程",@"故障原因",@"设备配件",@"配件类型",@"设备状态",@"是否更换配件",@"上次更换日期"];
+    NSArray * titles = @[@"是否人为",@"处理过程",@"故障原因",@"设备配件",@"配件类型",@"设备状态",@"是否更换配件"];
     [self.datasource addObjectsFromArray:titles];
     
     //提交
@@ -81,7 +81,7 @@ static NSString * const progressCellId =@"progressCellId";
     //是否更换配件
     NSString * changeDeviceParts = [self.mutableDictionary objectForKey:@"是否更换配件"];
     //上次更换日期
-    NSString * changDate = [self.mutableDictionary objectForKey:@"上次更换日期"];
+   // NSString * changDate = [self.mutableDictionary objectForKey:@"上次更换日期"];
     NSMutableDictionary * parms = [NSMutableDictionary dictionary];
     [parms setObject:_taskId forKey:@"MaintainTaskId"];
     [parms setObject:[human isEqualToString:@"非人为"]?@"0":@"1" forKey:@"HumanFlag"];
@@ -95,7 +95,7 @@ static NSString * const progressCellId =@"progressCellId";
     }
     [parms setObject:[statusOfDevice isEqualToString:@"带病作业"]?@"1":@"2" forKey:@"FacilityStatus"];
     [parms setObject:changeDeviceParts forKey:@"IsReplace"];
-    [parms setObject:changDate forKey:@"LastChangeTime"];
+   // [parms setObject:changDate forKey:@"LastChangeTime"];
     debugLog(@"parms === %@",parms);
     //转为joson
     NSMutableDictionary * jsonParms = [NSMutableDictionary dictionary];
