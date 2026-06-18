@@ -186,6 +186,8 @@
             cell.contentTextField.placeholder = @"选择申请物品";
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             cell.contentTextField.enabled =YES;
+        }else if ([tipString isEqualToString:@"申请原因"]){
+            cell.contentTextField.enabled =YES;
         }
         else{
             cell.contentTextField.inputAccessoryView  = self.tool;
@@ -503,7 +505,7 @@
     KWeakSelf
     [Units showHudWithText:Loading view:self.view model:MBProgressHUDModeIndeterminate];
     [HttpTool POST:[DeviceGetMaterialCommit getWholeUrl] param:childrenParms success:^(id  _Nonnull responseObject) {
-        [Units hideView];
+       // [Units hideView];
         [Units showHudWithText:responseObject[@"info"] view:weakSelf.view model:MBProgressHUDModeText];
         if ([[responseObject objectForKey:@"status"]intValue]==0) {
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
